@@ -15,6 +15,7 @@
   margin: 0px;
   box-sizing: content-box;
 }
+/* BACKGROUND */
 .light-blue{
     background-color: #c1f6ed;
 }
@@ -30,7 +31,32 @@
 .blue{
     background-color: #3FD0C9;
 }
-
-
-
-    ;/*# sourceMappingURL=default.css.map */
+.white{
+    background-color: white;
+}
+.black{
+    background-color: black;
+}
+/* FONT */
+.light-blue-text{
+    color: #c1f6ed;
+}
+.dark-green-text{
+    color: #02353C;
+}
+.green-text{
+    color: #449342;
+}
+.tosca-text{
+    color: #2EAF7D;
+}
+.blue-text{
+    color: #3FD0C9;
+}
+.white-text{
+    color: white;
+}
+.black-text{
+    color: black;
+}
+/*# sourceMappingURL=default.css.map */

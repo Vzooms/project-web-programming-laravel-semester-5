@@ -1,0 +1,65 @@
+.header{
+    padding-top: 1vw;
+    background-image: url('../Asset/background.webp');
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav{
+    font-family: regularp;
+    font-size: 1vw;
+}
+.web-name{
+    font-family: boldp;
+    font-size: 2vw;
+}
+.welcome{
+    display: flex;
+    padding: 3vw;
+}
+.left{
+    width: 50vw;
+    margin-left: 5vw;
+}
+.title{
+    font-family: boldp;
+    font-size: 5.5vw;
+}
+.desc{
+    font-family: regularp;
+    font-size: 1.6vw;
+}
+.right{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.sign-up{
+    width: 40vw;
+    font-family: boldp;
+    border: none;
+    margin-top: 2vw;
+    padding: 1vw;
+    border-radius: 0.5vw;
+    margin-right: 3vw;
+}
+.acc{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-family: regularp;
+    font-size: 1vw;
+    margin-right: 1.5vw;
+    margin-top: 1vw;
+}
+.welcome-logo{
+    width: 30vw;
+}
