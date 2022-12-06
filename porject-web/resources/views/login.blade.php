@@ -27,7 +27,6 @@
                         <input type="password" name="password" id="password">
                     </div>
                     <button type="submit">Log in</button>
-                    <button>Register</button>
                 </form>
             </div>
         </main>
