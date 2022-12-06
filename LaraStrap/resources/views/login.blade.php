@@ -4,34 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Larastrap</title>
+    <title>Larastrap | Login</title>
+    <link rel="icon" href="./Asset/logo.png">
     <link rel="stylesheet" href="./Styling/login.css">
     <link rel="stylesheet" href="./Styling/default.css">
 </head>
 <body>
-    <div id="login">
-        <header>
-            <div class="logo">
-                <img class="logo" src="Asset/logo.png" alt="">
+    <div id="login-wrapper">
+        <div id="login">
+            <div id="icon">
+                <img src="./Asset/logo.png" width="50px" alt="">
+                <h3>LaraStrap</h3>
             </div>
-            <x-css-close />
-        </header>
-        <main>
-            <div id="form-wrapper">
-                <h1>Log in</h1>
+            <div id="form-login">
+                <h1>Login</h1>
                 <form action="">
-                    <div class="form-detail">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+
+                    <label for="password">Password</label>
+                    <input type="text" name="password" id="password">
+
+                    <div id="submit-wrapper">
+                        <button type="submit">Sign In</button>
                     </div>
-                    <div class="form-detail">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
-                    </div>
-                    <button type="submit">Log in</button>
                 </form>
             </div>
-        </main>
+        </div>
+
+        <div id="toRegister">
+            <div id="register">
+                <h2>NEW HERE?</h2>
+                <p>Sign up and discover a great amount of new opportunities!</p>
+                <div id="submit-wrapper">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
