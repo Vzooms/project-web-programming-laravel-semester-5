@@ -1,6 +1,0 @@
-<<<<<<< HEAD
-hallo ini diaz
-=======
-hallo ini lady
-halo ini felix
->>>>>>> e8909b5f8d26a0a1c2cd475ec8cfd505a4196a61
