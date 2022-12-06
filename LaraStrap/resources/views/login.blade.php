@@ -11,7 +11,9 @@
 <body>
     <div id="login">
         <header>
-            logo
+            <div class="logo">
+                <img class="logo" src="Asset/logo.png" alt="">
+            </div>
             <x-css-close />
         </header>
         <main>
