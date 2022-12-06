@@ -7,6 +7,10 @@
     <title>LaraStrap</title>
 </head>
 <body>
-    
+    <div class="header">
+        <div class="navbar">
+            
+        </div>
+    </div>
 </body>
 </html>

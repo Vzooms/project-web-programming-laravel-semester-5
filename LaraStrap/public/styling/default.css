@@ -1,5 +1,36 @@
+@font-face {
+    font-family: boldp;
+    src: url(../Font/Poppins-Bold.otf);
+}
+@font-face {
+    font-family: regularp;
+    src: url(../Font/Poppins-Regular.otf);
+}
+@font-face {
+    font-family: lightp;
+    src: url(../Font/Poppins-Light.otf);
+}
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: content-box;
-}/*# sourceMappingURL=default.css.map */
+}
+.light-blue{
+    background-color: #c1f6ed;
+}
+.dark-green{
+    background-color: #02353C;
+}
+.green{
+    background-color: #449342;
+}
+.tosca{
+    background-color: #2EAF7D;
+}
+.blue{
+    background-color: #3FD0C9;
+}
+
+
+
+    ;/*# sourceMappingURL=default.css.map */

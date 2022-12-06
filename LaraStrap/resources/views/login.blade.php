@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Larastrap</title>
-    <link rel="stylesheet" href="./styling/login.css">
-    <link rel="stylesheet" href="./styling/default.css">
+    <link rel="stylesheet" href="./Styling/login.css">
+    <link rel="stylesheet" href="./Styling/default.css">
 </head>
 <body>
     <div id="login">

@@ -21,6 +21,7 @@
 }
 #login main #form-wrapper h1 {
   margin-bottom: 3vh;
+  font-family: boldp;
 }
 #login main #form-wrapper div {
   text-align: left;
