@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styling/login/login.css">
-    <link rel="stylesheet" href="./styling/default/default.css">
+    <title>Larastrap</title>
+    <link rel="stylesheet" href="./styling/login.css">
+    <link rel="stylesheet" href="./styling/default.css">
 </head>
 <body>
     <div id="login">
@@ -18,11 +18,11 @@
             <div id="form-wrapper">
                 <h1>Log in</h1>
                 <form action="">
-                    <div>
+                    <div class="form-detail">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email">
                     </div>
-                    <div>
+                    <div class="form-detail">
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password">
                     </div>
