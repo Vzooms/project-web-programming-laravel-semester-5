@@ -67,12 +67,9 @@
 
             {{-- Image Study List --}}
             <div class ="icon-img">
-                <img src="Asset/icon.png" alt="">
-                <p class = "icon-def"> Study List</p>
+                <img src="Asset/study.png" alt="">
+                <p class = "icon-def dark-green-text"> Study List</p>
             </div>
-
-
-
 
         </div>
 
