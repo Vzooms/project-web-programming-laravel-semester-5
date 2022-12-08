@@ -1,26 +1,24 @@
-<div id="backDrop"></div>
 <div id="menu-wrapper">
-    <div id="menu">
-        <div id="menu-header">
-            <img src="./Asset/Image/logo.png" width="50px" alt="laraStrap Icon">
-            <h3>LaraStrap</h3>
-        </div>
-        <div id="menu-list">
-            <a class="underline" href="/">
-                Home
-                <img src="./Asset/Icon/next.png" alt="RightArrow">
-            </a>
-            <a class="underline" href="#">
-                Course
-                <img src="./Asset/Icon/next.png" alt="RightArrow">
-            </a>
-            <a href="#">
-                Study List
-                <img src="./Asset/Icon/next.png" alt="RightArrow">
-            </a>
-        </div>
+    <div id="menu-header">
+        <img src="./Asset/Image/logo.png" width="50px" alt="laraStrap Icon">
+        <h3>LaraStrap</h3>
+    </div>
+    <div id="menu-list">
+        <a class="underline" href="/">
+            Home
+            <img src="./Asset/Icon/next.png" alt="RightArrow">
+        </a>
+        <a class="underline" href="#">
+            Course
+            <img src="./Asset/Icon/next.png" alt="RightArrow">
+        </a>
+        <a href="#">
+            Study List
+            <img src="./Asset/Icon/next.png" alt="RightArrow">
+        </a>
     </div>
 </div>
+<div id="backDrop"></div>
 
 <style>
     #backDrop {
@@ -34,18 +32,22 @@
 
     #menu-wrapper{
         z-index: 1;
-        align-items: center;
         display: flex;
+        flex-direction: column;
         position: absolute;
         left: 0px;
         top: 0px;
         color: #03353C;
         font-family: boldp;
+        z-index: 3;
     }
 
-    #menu{
+    #menu-wrapper:hover{
         background-color: white;
-        z-index: 3;
+    }
+
+    #menu-wrapper:hover ~ #backDrop{
+        display: block !important;
     }
 
     #menu-header{
@@ -53,14 +55,24 @@
         display: flex;
     }
 
-    #menud-header:hover ~ #menu ~ #menu-wrapper #backDrop{
+    #menu-header:hover ~ #menu-list{
+        background-color: white;
         display: block !important;
     }
 
     #menu-list{
-        display: flex;
+        display: none;
         flex-direction: column;
         padding: 1vw;
+    }
+
+    #menu-list:hover{
+        background-color: white;
+        display: block !important;
+    }
+
+    #menu-list:hover{
+        display: flex;
     }
 
     #menu-list a{
