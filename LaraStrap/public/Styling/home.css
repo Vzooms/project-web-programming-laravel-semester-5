@@ -66,3 +66,277 @@
 .welcome-logo{
     width: 30vw;
 }
+
+/* Study List */
+
+.study-list-search{
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+.search-bar{
+    margin: 4vw;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5vw;
+    box-shadow: 7px 7px 6px 0px #888888;
+    background-color: #F5F5F5;
+    margin-left: 20vw;
+}
+
+#fsearch{
+    display: flex;
+    width: 40vw;
+    font-size: 1.5vw;
+    font-family: regularp;
+    font-weight: 400;
+    padding: 1vw 2vw 1vw 1vw;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+}
+
+.search-button{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+.search-button img {
+    margin: 1vw;
+    padding-top: 0.5vw;
+    width: 2vw;
+    height: 2vw;
+    object-fit: cover;
+
+  }
+.icon-img{
+    margin-top: 2vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10vw;
+    justify-content: center;
+}
+
+/* size icon */
+.icon-img img{
+    width: 5vw ;
+    height: 5vw ;
+}
+
+.icon-def{
+    display: flex;
+    font-size: 1.5vw;
+    font-family: regularp;
+}
+
+.content-wrap{
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 7vw;
+
+}
+ .html-content{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+}
+
+ .css-content{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+}
+
+.js-content{
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+}
+
+
+.html-content .con-head{
+    display: flex;
+    justify-content: center;
+    font-family: boldp;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+}
+
+.html-content .con-sub{
+    display: flex;
+    justify-content: center;
+    font-family: regularp;
+    font-size: 1.7vw;
+    align-items: center;
+}
+
+.html-content .con-btn{
+    margin-top: 2vw;
+    border-radius: 5vw;
+    display: flex;
+    justify-content: center;
+    padding: 1vw 1vw;
+}
+
+.html-content .add-btn{
+    margin-top: 2vw;
+    border-radius: 5vw;
+    border: 1px solid;
+    border-color: #03353C;
+    display: flex;
+    justify-content: center;
+    padding: 1vw 1vw;
+}
+
+.html-content .learn-now{
+    display: flex;
+    justify-content: center;
+    font-family: regularp;
+    font-size: 1.7vw;
+    background: transparent;
+    border: none;
+
+}
+
+.html-content .add-list{
+    display: flex;
+    justify-content: center;
+    font-family: regularp;
+    font-size: 1.7vw;
+    background: transparent;
+    border: none;
+
+}
+
+.css-content .con-head{
+    display: flex;
+    justify-content: center;
+    font-family: boldp;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+}
+
+.css-content .con-sub{
+    display: flex;
+    justify-content: center;
+    font-family: regularp;
+    font-size: 1.7vw;
+    align-items: center;
+}
+
+.css-content .con-btn{
+    margin-top: 2vw;
+    margin-left: -1vw;
+    margin-right: -1vw;
+    border-radius: 5vw;
+    display: flex;
+    justify-content: center;
+    padding: 1vw 1vw;
+}
+
+.css-content .add-btn{
+    margin-top: 2vw;
+    margin-left: -1vw;
+    margin-right: -1vw;
+    border-radius: 5vw;
+    border: 1px solid;
+    border-color: #449342;
+    display: flex;
+    justify-content: center;
+    padding: 1vw 1vw;
+}
+
+.css-content .learn-now{
+    display: flex;
+    justify-content: center;
+    font-family: regularp;
+    font-size: 1.7vw;
+    background: transparent;
+    border: none;
+
+}
+
+.css-content .add-list{
+    display: flex;
+    justify-content: center;
+    font-family: regularp;
+    font-size: 1.7vw;
+    background: transparent;
+    border: none;
+
+}
+
+.js-content .con-head{
+    display: flex;
+    justify-content: center;
+    font-family: boldp;
+    font-size: 4vw;
+    margin-bottom: 1vw;
+}
+
+.js-content .con-sub{
+    display: flex;
+    justify-content: center;
+    font-family: regularp;
+    font-size: 1.7vw;
+    align-items: center;
+}
+
+.js-content .con-btn{
+    margin-top: 2vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    border-radius: 5vw;
+    display: flex;
+    justify-content: center;
+    padding: 1vw 1vw;
+}
+
+.js-content .add-btn{
+    margin-top: 2vw;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    border-radius: 5vw;
+    border: 1px solid;
+    border-color: #2EAF7D;
+    display: flex;
+    justify-content: center;
+    padding: 1vw 1vw;
+}
+
+.js-content .learn-now{
+    display: flex;
+    justify-content: center;
+    font-family: regularp;
+    font-size: 1.7vw;
+    background: transparent;
+    border: none;
+
+}
+
+.js-content .add-list{
+    display: flex;
+    justify-content: center;
+    font-family: regularp;
+    font-size: 1.7vw;
+    background: transparent;
+    border: none;
+
+}
+
+.html-line{
+    border-right: 0.3vw dashed;
+    margin-right: 6vw;
+}
+
+.css-line{
+    border-right: 0.3vw dashed;
+    margin-right: 4vw;
+    margin-left: 1vw;
+}
+
