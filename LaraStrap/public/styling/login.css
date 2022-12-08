@@ -8,16 +8,6 @@
     position: relative;
 }
 
-#icon{
-    align-items: center;
-    display: flex;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    color: #03353C;
-    font-family: boldp;
-}
-
 #form-login{
     display: flex;
     flex-direction: column;
