@@ -10,12 +10,9 @@
     <link rel="stylesheet" href="./Styling/default.css">
 </head>
 <body>
+    @include('component.login-menu')
     <div id="login-wrapper">
         <div id="login">
-            <div id="icon">
-                <img src="./Asset/logo.png" width="50px" alt="">
-                <h3>LaraStrap</h3>
-            </div>
             <div id="form-login">
                 <h1>Login</h1>
                 <form action="">
