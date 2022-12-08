@@ -54,5 +54,104 @@
             </div>
         </div>
     </div>
+    {{-- <div class="study-list-container"> --}}
+
+        <div class="study-list-search">
+            {{-- Form Container --}}
+            <form class="search-bar">
+                <button type="submit" class="search-button">
+                <img src="Asset/search.webp" alt="">
+                </button>
+                <input type="search" id="fsearch" value="" placeholder="search topic, code, and more...">
+            </form>
+
+            {{-- Image Study List --}}
+            <div class ="icon-img">
+                <img src="Asset/icon.png" alt="">
+                <p class = "icon-def"> Study List</p>
+            </div>
+
+
+
+
+        </div>
+
+        {{-- HTML Content --}}
+        <div class = "content-wrap">
+            <div class = "html-content">
+
+                    <div class= "con-head dark-green-text">
+                    HTML
+                    </div>
+                    <div class="con-sub dark-green-text">
+                    The language for
+                    </div>
+                    <div class ="con-sub dark-green-text">
+                     building web pages
+                    </div>
+                    <div class="con-btn dark-green">
+                        <button class="learn-now white-text">
+                            Learn Now
+                        </button>
+                    </div>
+                    <div class="add-btn white">
+                        <button class="add-list dark-green-text">
+                            Add to List
+                        </button>
+                    </div>
+            </div>
+            <div class="html-line">
+
+            </div>
+            <div class = "css-content">
+
+                    <div class= "con-head green-text">
+                    CSS
+                    </div>
+                    <div class="con-sub green-text">
+                        The language for
+                    </div>
+                    <div class ="con-sub green-text">
+                        styling web pages
+                       </div>
+                    <div class="con-btn green">
+                        <button class="learn-now white-text">
+                            Learn Now
+                        </button>
+                    </div>
+                    <div class="add-btn white">
+                        <button class="add-list green-text">
+                            Add to List
+                        </button>
+                    </div>
+
+            </div>
+            <div class="css-line">
+
+                    </div>
+                <div class = "js-content">
+
+                <div class= "con-head tosca-text">
+                JS
+                </div>
+                <div class="con-sub tosca-text">
+                    The language for
+                </div>
+                <div class ="con-sub tosca-text">
+                    programming web pages
+                   </div>
+                <div class="con-btn tosca">
+                    <button class="learn-now white-text">
+                        Learn Now
+                    </button>
+                </div>
+                <div class="add-btn white">
+                    <button class="add-list tosca-text">
+                        Add to List
+                    </button>
+                </div>
+
+        </div>
+    {{-- </div> --}}
 </body>
 </html>
