@@ -143,13 +143,14 @@
  .html-content{
     display: flex;
     flex-direction: column;
-    margin-right: 5vw;
+    margin-right: 8vw;
 }
 
  .css-content{
     display: flex;
     flex-direction: column;
-    margin-right: 5vw;
+    margin-right: 8vw;
+    margin-left: 9vw;
 }
 
 .js-content{
@@ -331,7 +332,7 @@
 
 .html-line{
     border-right: 0.3vw dashed;
-    margin-right: 6vw;
+
 }
 
 .css-line{
