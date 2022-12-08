@@ -43,10 +43,10 @@
                     Find your everyday topic about HTML, CSS, JS, <br>and many more.....
                 </div>
                 <div class="btn">
-                    <button class="sign-up light-blue dark-green-text">Sign Up</button>
+                    <button class="sign-up white dark-green-text">Sign Up</button>
                 </div>
                 <div class="acc">
-                    <a class="light-blue-text acc" href="login">I already have an account</a>
+                    <a class="white-text acc" href="login">I already have an account</a>
                 </div>
             </div>
             <div class="right">
