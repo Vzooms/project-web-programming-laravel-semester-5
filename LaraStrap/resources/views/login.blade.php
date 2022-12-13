@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./Styling/default.css">
 </head>
 <body>
-    @include('component.login-menu')
+    @include('component.logo_dropdown')
     <div id="login-wrapper">
         <div id="login">
             <div id="form-login">
