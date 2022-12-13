@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="right">
-                <img class="welcome-logo" src="Asset/Logo.png" alt="">
+                <img class="welcome-logo" src="Asset/Icon/Logo.png" alt="">
             </div>
         </div>
     </div>
@@ -60,14 +60,14 @@
             {{-- Form Container --}}
             <form class="search-bar">
                 <button type="submit" class="search-button">
-                <img src="Asset/search.webp" alt="">
+                <img src="Asset/Icon/search.webp" alt="">
                 </button>
                 <input type="search" id="fsearch" value="" placeholder="search topic, code, and more...">
             </form>
 
             {{-- Image Study List --}}
             <div class ="icon-img">
-                <img src="Asset/study.png" alt="">
+                <img src="Asset/Icon/study.png" alt="">
                 <p class = "icon-def dark-green-text"> Study List</p>
             </div>
 

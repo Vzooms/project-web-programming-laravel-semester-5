@@ -1,8 +1,8 @@
 .header{
     padding-top: 1vw;
-    background-image: url('../Asset/background.jpg');
+    background-image: url('../Asset/Image/background.jpg');
     background-size: cover;
-    height: 46vw;
+    height: 100vh;
 }
 .navbar{
     display: flex;
