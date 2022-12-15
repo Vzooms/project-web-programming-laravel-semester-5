@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./Styling/default.css">
 </head>
 <body>
-    @include('component.login-menu')
+    @include('component.logo_dropdown')
     <div id="login-wrapper">
         <div id="login">
             <div id="form-login">
@@ -34,7 +34,9 @@
                 <h2>NEW HERE?</h2>
                 <p>Sign up and discover a great amount of new opportunities!</p>
                 <div id="submit-wrapper">
-                    <button type="submit">Sign Up</button>
+                    <a href="/register">
+                        <button>Sign Up</button>
+                    </a>
                 </div>
             </div>
         </div>
