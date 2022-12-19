@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="right">
-                <img class="welcome-logo" src="Asset/Icon/Logo.png" alt="">
+                <img class="welcome-logo" src="Asset/Image/Logo.png" alt="">
             </div>
         </div>
     </div>
