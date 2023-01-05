@@ -15,7 +15,8 @@
         <div id="login">
             <div id="form-login">
                 <h1>Login</h1>
-                <form action="">
+                <form action="" method="post">
+                    @csrf
                     <label for="username">Username</label>
                     <input type="text" name="username" id="username">
 

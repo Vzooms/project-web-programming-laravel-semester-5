@@ -15,7 +15,8 @@
         <div id="register">
             <div id="form-register">
                 <h1>Register</h1>
-                <form action="">
+                <form action="" method="post">
+                    @csrf
                     <div id="form-register-wrapper">
                         <div class="reg">
                             <div>
@@ -70,8 +71,8 @@
 
         <div id="toLogin">
             <div id="login">
-                <h2>NEW HERE?</h2>
-                <p>Sign up and discover a great amount of new opportunities!</p>
+                <h2>Have an account?</h2>
+                <p>Log in to your account to recover your progress!</p>
                 <div id="submit-wrapper">
                     <a href="/login">
                         <button>Sign In</button>
