@@ -16,6 +16,14 @@
   box-sizing: content-box;
 }
 /* BACKGROUND */
+:root{
+    --light-blue :#c1f6ed;
+    --dark-green : #02353C;
+    --green : #449342;
+    --tosca : #2EAF7D;
+    --blue : #3FD0C9;
+}
+
 .light-blue{
     background-color: #c1f6ed;
 }
@@ -59,4 +67,3 @@
 .black-text{
     color: black;
 }
-/*# sourceMappingURL=default.css.map */
