@@ -69,6 +69,10 @@
 
 /* Study List */
 
+.search-section{
+    margin-bottom: 2vw;
+}
+
 .study-list-search{
     display: flex;
     justify-content: center;
@@ -80,7 +84,7 @@
     display: flex;
     flex-direction: row;
     border-radius: 5vw;
-    box-shadow: 7px 7px 6px 0px #888888;
+    box-shadow: .7vw .7vw .6vw 0vw #888888;
     background-color: #F5F5F5;
     margin-left: 20vw;
 }
@@ -341,4 +345,226 @@
     margin-right: 4vw;
     margin-left: 1vw;
 }
+
+/* Course Section */
+.course-section{
+   margin-top: 10vw;
+   background-color:#03353C;
+   padding-left: 6vw;
+   padding-top: 3vw;
+   padding-bottom: 1vw;
+
+}
+
+.course-header-title{
+    color: white;
+    font-family: boldp;
+    font-size: 4vw;
+    margin-left: 2vw;
+}
+
+.course-content{
+    display: flex;
+    flex-direction: row;
+    margin: 1vw;
+
+}
+
+.course-card-long{
+    background-color: white;
+    margin-bottom: 2vw;
+    border-radius: 1vw;
+    margin-right: 6vw;
+    width: 124vw;
+}
+
+.course-card-short{
+    background-color: white;
+    margin-bottom: 2vw;
+    border-radius: 1vw;
+    margin-right: 6vw;
+    width: 55vw;
+}
+
+
+.course-title{
+    text-align: center;
+    margin-bottom: .5vw;
+    padding-top: .5vw;
+    font-family: boldp;
+    font-size: 1vw;
+}
+
+.course-border{
+    border-top: .2vw dashed;
+    border-color: black;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.padding-title-long{
+    padding-left: 2vw;
+    font-family: regularp;
+    font-size: .8vw;
+}
+
+.padding-title-short{
+    padding-left: 2vw;
+    font-family: regularp;
+    font-size: .8vw;
+}
+
+.course-desc-content{
+    margin-bottom: 3vw;
+    padding-left: 2vw;
+    font-family: regularp;
+    font-size: .8vw;
+}
+
+.card-footer{
+    background-color: #c1f6ed;
+    border-radius: 1vw;
+}
+
+.footer-word{
+    text-align: right;
+    padding: .3vw;
+    padding-right: .7vw;
+    font-family: boldp;
+    font-size: .8vw;
+}
+
+
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+/* ================================== TUTORIAL ============================== */
+
+.tutorial-section{
+    margin-top: 2vw;
+}
+
+.tutorial-header-title{
+    text-align: right;
+    font-size: 4vw;
+    font-family: boldp;
+    margin: 1.5vw;
+    margin-right: 5vw;
+    margin-bottom: 2vw;
+}
+
+
+.swiper-slide{
+    text-align: center;
+}
+
+.tutorial-img{
+    width: 65vw;
+    margin-bottom: 2vw;
+    box-shadow: .7vw .7vw .6vw 0vw #888888;
+}
+
+.tutorial-button-img-prev{
+    width: 4vw;
+}
+
+.tutorial-button-img-next{
+    width: 4vw;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+    display: none;
+}
+
+/* ========================================== ADVANTAGES ==================== */
+.advantages-section{
+    margin-top: 10vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+ }
+
+ .advantages-wrapper1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10vw;
+    margin-bottom: 1vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+ }
+
+ .advantages-wrapper2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10vw;
+    margin-top: 1vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+
+ }
+
+ .advantages-title{
+    font-size: 2vw;
+    font-family: boldp;
+    font-weight: lighter;
+
+ }
+ .advantages-description{
+    color: white;
+    font-size: 1.5vw;
+    font-family: lightp;
+ }
+
+ .larastrap-icon{
+    text-align: center;
+ }
+
+ .larastrap-img{
+    width: 20vw;
+ }
+
+ /* ===================================== FOOTER ========================= */
+ .footer-section{
+    margin: 2vw;
+ }
+
+ .footer-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+
+ .footer-logo{
+    width: 8vw;
+ }
+
+ .footer-title{
+    font-size: 2vw;
+    font-family: boldp;
+    margin-left: 2vw;
+ }
+
+ .footer-copyright{
+    font-size: 1vw;
+    font-family: lightp;
+    margin-top: .5vw;
+    margin-left: 66vw;
+
+ }
+
+
+
+
+
+
+
+
+
+
 
