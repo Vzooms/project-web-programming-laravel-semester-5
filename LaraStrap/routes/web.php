@@ -23,6 +23,10 @@ Route::get('/register', [UserController::class, 'toRegister']);
 
 Route::post('/login', [UserController::class, 'login']);
 Route::post('/register', [UserController::class, 'register']);
+Route::post('/logout', [UserController::class, 'logout']);
+
+Route::post('/editUser', [UserController::class, 'editUser']);
+Route::post('/deleteUser', [UserController::class, 'deleteUser']);
 
 
 Route::get('/profile', function () {

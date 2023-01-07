@@ -56,6 +56,39 @@ class UserController extends Controller
 
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
-        ])->onlyInput('email');
+        ]);
+    }
+
+    public function logout(){
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/');
+    }
+
+    public function editUser(Request $req){
+        $req->validate([
+            'username' => 'required',
+            'email' =>'required|email',
+            'dateOfBirth' => 'required|before:today',
+            'gender' =>'required',
+            'password' =>'required',
+        ]);
+
+        User::where('id', auth()->user()->id)->update([
+            'username' => $req->username,
+            'email' => $req->email,
+            'dateOfBirth' => $req->dateOfBirth,
+            'gender' => $req->gender,
+            'password' => bcrypt($req->password),
+        ]);
+
+        // lom tau mau kmna, jadi smntara ke home dlu
+        return redirect('/');
+    }
+
+    public function deleteUser(Request $req){
+        User::where('id', auth()->user()->id)->delete();
+        return redirect('/register');
     }
 }
