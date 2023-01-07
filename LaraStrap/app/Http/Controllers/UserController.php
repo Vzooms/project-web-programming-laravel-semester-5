@@ -17,6 +17,12 @@ class UserController extends Controller
         return view('login');
     }
 
+    public function toEditProfile(){
+        return view('profile.profile-edit',[
+            'user' => User::where('id', auth()->user()->id)->first()
+        ]);
+    }
+
     public function register(Request $req){
         $req->validate([
             'username' => 'required',
@@ -91,4 +97,6 @@ class UserController extends Controller
         User::where('id', auth()->user()->id)->delete();
         return redirect('/register');
     }
+
+
 }
