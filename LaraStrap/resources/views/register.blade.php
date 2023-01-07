@@ -15,23 +15,24 @@
         <div id="register">
             <div id="form-register">
                 <h1>Register</h1>
-                <form action="" method="post">
+                <form action="/register" method="post">
+                    {{ $errors->first() }}
                     @csrf
                     <div id="form-register-wrapper">
                         <div class="reg">
                             <div>
                                 <label for="username">Username</label>
-                                <input type="text" name="username" id="username">
+                                <input type="text" name="username" id="username" value={{ old('username') }}>
                             </div>
 
                             <div>
                                 <label for="email">E-mail</label>
-                                <input type="email" name="email" id="email">
+                                <input type="email" name="email" id="email" value={{ old('email') }}>
                             </div>
 
                             <div style="display:flex; flex-direction:column; width:100%;">
                                 <label for="dateOfBirth">Date Of Birth</label>
-                                <input type="date" name="dateOfBirth" id="dateOfBirth">
+                                <input type="date" name="dateOfBirth" id="dateOfBirth" value={{ old('dateOfBirth') }}>
                             </div>
                         </div>
 
@@ -40,11 +41,11 @@
                                 <label for="gender">Gender</label>
                                 <div id="gender-select">
                                     <div>
-                                        <input type="radio" id="male" value="male" name="gender">
+                                        <input {{ old('gender') == 'male' ? 'checked' : '' }} type="radio" id="male" value="male" name="gender">
                                         <label for="male">Male</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="female" value="female" name="gender">
+                                        <input {{ old('gender') == 'female' ? 'checked' : '' }} type="radio" id="female" value="female" name="gender">
                                         <label for="female">Female</label>
                                     </div>
                                 </div>

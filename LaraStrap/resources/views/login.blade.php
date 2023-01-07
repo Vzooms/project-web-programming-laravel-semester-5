@@ -15,13 +15,14 @@
         <div id="login">
             <div id="form-login">
                 <h1>Login</h1>
-                <form action="" method="post">
+                <form action="/login" method="post">
                     @csrf
+                    {{ $errors->first() }}
                     <label for="username">Username</label>
-                    <input type="text" name="username" id="username">
+                    <input type="text" name="username" id="username" value={{ old('username') }}>
 
                     <label for="password">Password</label>
-                    <input type="text" name="password" id="password">
+                    <input type="password" name="password" id="password">
 
                     <div id="submit-wrapper">
                         <button type="submit">Sign In</button>
