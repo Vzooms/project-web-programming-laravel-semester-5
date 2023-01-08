@@ -22,6 +22,7 @@
     <div class="empty-desc">
         <p class="empty-desc-word tosca-text">Oops! It looks like your study list is empty.</p>
     </div>
+    
 
 </body>
 </html>

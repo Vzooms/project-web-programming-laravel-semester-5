@@ -38,10 +38,18 @@ Route::get('/profileEdit', function () {
     return view('profile.profile-edit');
 });
 
-Route::get('/studyList', function () {
+Route::get('/studylist', function () {
     return view('studylist');
 });
 
 Route::get('/studylistempty', function () {
     return view('studylistempty');
+});
+
+Route::get('/profilecourse', function () {
+    return view('profile.profile-course');
+});
+
+Route::get('/profileempty', function () {
+    return view('profile.profile-course-empty');
 });

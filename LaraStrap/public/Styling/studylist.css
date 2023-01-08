@@ -7,8 +7,9 @@
 }
 
 .study-list-title{
-    font-size: 3vw;
+    font-size: 4vw;
     font-family: boldp;
+    margin-bottom: 2vw;
 
 }
 
@@ -19,7 +20,7 @@
 
 .empty-img{
     width: 30vw;
-    margin-top: 4vw;
+    margin-top: 2vw;
     margin-bottom: 3vw;
 }
 
@@ -34,13 +35,15 @@
 
 /* =================================== STUDY LIST ===================================== */
 .study-list-container{
-    margin-left: 5vw;
-    margin-right: 5vw;
-    padding-top: 1vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
+    margin-bottom: 2vw;
+    margin-left: 11.5vw;
+    margin-right: 11.5vw;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 1vw;
     display: flex;
-    background-color: green;
+    background-color: #2EAF7D;
     justify-content: space-between;
     border-radius: 1vw;
 
@@ -60,41 +63,64 @@
 
 .button2{
     background-color: #02353C;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .button3{
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
 }
 
 .button-link1{
     text-decoration: none;
     color: white;
+    margin-left: 1vw;
 }
 
 .button-link2{
     text-decoration: none;
     color: white;
+    margin-left: 1vw;
 }
 
 .button-link3{
     text-decoration: none;
     color: black;
+    margin-left: 1vw;
 }
 
 .button-icon1{
     width: 1.2vw;
     padding-top: .15vw;
-    margin-left: 4vw;
+    margin-left: 3vw;
     float: right;
 }
+
+.button-icon2{
+    width: 1.2vw;
+    padding-top: .15vw;
+    margin-left: 2.5vw;
+    float: right;
+}
+
+.button-icon3{
+    width: 1.2vw;
+    padding-top: .15vw;
+    margin-left: 3.5vw;
+    float: right;
+}
+
 
 .button1, .button2, .button3{
     border-radius: 1vw;
     width: 10vw;
     margin-bottom: 1vw;
     padding: .3vw;
-
     font-size: 1vw;
     font-family: boldp;
 }
