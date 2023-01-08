@@ -37,8 +37,3 @@ Route::get('/profile', function () {
 Route::get('/profileEdit', function () {
     return view('profile.profile-edit');
 });
-
-// Routing sementara
-Route::get('/course', function () {
-    return view('course');
-});

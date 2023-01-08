@@ -1,0 +1,113 @@
+.study-list-section{
+    margin: 1vw;
+}
+.study-list-header{
+    text-align: right;
+    margin-right: 2vw;
+}
+
+.study-list-title{
+    font-size: 3vw;
+    font-family: boldp;
+
+}
+
+/* ===================================== EMPTY ======================================= */
+.study-list-empty{
+    text-align: center;
+}
+
+.empty-img{
+    width: 30vw;
+    margin-top: 4vw;
+    margin-bottom: 3vw;
+}
+
+.empty-desc{
+    text-align: center;
+}
+
+.empty-desc-word{
+    font-size:1.5vw;
+    font-family: regularp;
+}
+
+/* =================================== STUDY LIST ===================================== */
+.study-list-container{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    background-color: green;
+    justify-content: space-between;
+    border-radius: 1vw;
+
+}
+.study-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button1{
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.button2{
+    background-color: #02353C;
+}
+
+.button3{
+    background-color: white;
+
+}
+
+.button-link1{
+    text-decoration: none;
+    color: white;
+}
+
+.button-link2{
+    text-decoration: none;
+    color: white;
+}
+
+.button-link3{
+    text-decoration: none;
+    color: black;
+}
+
+.button-icon1{
+    width: 1.2vw;
+    padding-top: .15vw;
+    margin-left: 4vw;
+    float: right;
+}
+
+.button1, .button2, .button3{
+    border-radius: 1vw;
+    width: 10vw;
+    margin-bottom: 1vw;
+    padding: .3vw;
+
+    font-size: 1vw;
+    font-family: boldp;
+}
+
+.study-card-title{
+    font-size: 1.7vw;
+    font-family: boldp;
+    color: white;
+}
+
+.study-card-desc{
+    font-size: 1vw;
+    font-family: regularp;
+    color: white;
+}
+
