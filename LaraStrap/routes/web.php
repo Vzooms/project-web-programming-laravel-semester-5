@@ -37,3 +37,11 @@ Route::get('/profile', function () {
 Route::get('/profileEdit', function () {
     return view('profile.profile-edit');
 });
+
+Route::get('/studyList', function () {
+    return view('studylist');
+});
+
+Route::get('/studylistempty', function () {
+    return view('studylistempty');
+});
