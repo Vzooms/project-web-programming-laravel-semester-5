@@ -38,9 +38,7 @@ Route::get('/profileEdit', function () {
     return view('profile.profile-edit');
 });
 
-Route::get('/studylist', function () {
-    return view('studylist');
-});
+Route::get('/studyList', [CourseController::class, 'toStudyList']);
 
 Route::get('/studylistempty', function () {
     return view('studylistempty');
