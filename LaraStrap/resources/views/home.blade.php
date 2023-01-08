@@ -44,7 +44,9 @@
                     Find your everyday topic about HTML, CSS, JS, <br>and many more.....
                 </div>
                 <div class="btn">
-                    <button class="sign-up white dark-green-text">Sign Up</button>
+                    <button class="sign-up white dark-green-text">
+                        <a class="link dark-green-text" href="/register">Sign Up</a>
+                    </button>
                 </div>
                 <div class="acc">
                     <a class="white-text acc" href="login">I already have an account</a>

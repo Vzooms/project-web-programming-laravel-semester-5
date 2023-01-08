@@ -2,7 +2,7 @@
     padding-top: 1vw;
     background-image: url('../Asset/Image/background.jpg');
     background-size: cover;
-    height: 100vh;
+    height: 46vw;
 }
 .navbar{
     display: flex;
@@ -53,6 +53,9 @@
     border-radius: 0.5vw;
     margin-right: 3vw;
     font-size: 1.5vw;
+}
+.link{
+    text-decoration: none;
 }
 .acc{
     display: flex;
