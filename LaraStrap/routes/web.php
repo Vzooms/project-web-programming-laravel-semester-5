@@ -30,10 +30,7 @@ Route::post('/logout', [UserController::class, 'logout']);
 Route::post('/editUser', [UserController::class, 'editUser']);
 Route::post('/deleteUser', [UserController::class, 'deleteUser']);
 
-
-Route::get('/profile', function () {
-    return view('profile.profile');
-});
+Route::get('/profile', [UserController::class, 'toProfile']);
 
 Route::get('/profileEdit', function () {
     return view('profile.profile-edit');
@@ -50,12 +47,9 @@ Route::get('/studylistempty', function () {
     return view('studylistempty');
 });
 
-Route::get('/profilecourse', function () {
-    return view('profile.profile-course');
-});
 
 Route::get('/profileempty', function () {
-    return view('profile.profile-course-empty');
+    return view('profile.profile-empty');
 });
 
 Route::get('/course', function () {

@@ -33,7 +33,7 @@ class CourseController extends Controller
 
         return redirect('/deleteStudyList',[
             'req' => $req
-        ])
+        ]);
     }
 
 }

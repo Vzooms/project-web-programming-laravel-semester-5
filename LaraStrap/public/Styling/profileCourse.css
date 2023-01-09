@@ -218,5 +218,8 @@
 
 .logout-link{
     color: white;
-    text-decoration: none;
+    font-size: 1.1vw;
+    border: none;
+    font-family: boldp;
+    background-color: #449342;
 }

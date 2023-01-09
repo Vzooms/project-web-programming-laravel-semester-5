@@ -13,12 +13,12 @@
 <body>
     <div class="header">
         <div class="navbar white-text">
-            <div class="profile">
-                profile image
-            </div>
-            <div class="nav">
-                Welcome, {{ auth()->user()->username}}
-            </div>
+            <a class="profile" href="/profile">
+                <img src="./Asset/Icon/profile-home.png" alt="">
+                <div class="nav">
+                    Welcome, {{ auth()->user()->username}}
+                </div>
+            </a>
             <div class="nav">
                 Course
             </div>

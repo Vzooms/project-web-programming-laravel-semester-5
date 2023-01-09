@@ -10,6 +10,10 @@
     align-items: center;
     padding: 0 2vw 2vw 2vw;
 }
+.profile{
+    display: flex;
+    align-items: center;
+}
 .nav{
     font-family: regularp;
     font-size: 1vw;

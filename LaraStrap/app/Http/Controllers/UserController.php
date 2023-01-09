@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\StudyList;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
@@ -25,8 +26,7 @@ class UserController extends Controller
 
     public function toProfile(){
         return view('profile.profile',[
-            'user' => User::where('id', auth()->user()->id)->first(),
-            'completedCourse' => StudyList::where('id', auth()->user->id)->get()
+            'completedCourse' => StudyList::where('user_id', auth()->user()->id)->get()
         ]);
     }
 
@@ -72,11 +72,11 @@ class UserController extends Controller
         ]);
     }
 
-    public function logout(){
+    public function logout(Request $request){
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect('/');
+        return redirect('/login');
     }
 
     public function editUser(Request $req){
