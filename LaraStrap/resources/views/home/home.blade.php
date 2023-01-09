@@ -230,19 +230,11 @@
         <p class="footer-copyright">Copyright 2022</p>
     </div>
 
-
-
-
-
 </div>
-
-
 
 {{-- Script --}}
 <script src="/Styling/swiper-bundle.min.js"></script>
 <script src="/Styling/main.js"></script>
-
-
 
 </body>
 </html>

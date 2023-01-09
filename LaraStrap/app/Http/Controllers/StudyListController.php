@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 class StudyListController extends Controller
 {
     public function toStudyList(){
-        return view('studylist',[
+        return view('StudyList.studylist',[
             'studyList' => StudyList::where('user_id', auth()->user()->id)->get()
         ]);
     }

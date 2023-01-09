@@ -43,15 +43,6 @@ Route::post('/deleteStudyList', [StudyListController::class, 'deleteStudyList'])
 Route::post('/createCourse', [StudyListController::class, 'createCourse']);
 Route::post('/deleteCourse', [StudyListController::class, 'deleteCourse']);
 
-Route::get('/studylistempty', function () {
-    return view('studylistempty');
-});
-
-
-Route::get('/profileempty', function () {
-    return view('profile.profile-empty');
-});
-
 Route::get('/course', function () {
     return view('course');
 });
