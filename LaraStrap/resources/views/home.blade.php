@@ -96,9 +96,11 @@
                         </button>
                     </div>
                     <div class="add-btn white">
+                        <form action="">
                         <button class="add-list dark-green-text">
                             Add to List
                         </button>
+                        </form>
                     </div>
             </div>
             <div class="html-line">
@@ -158,11 +160,11 @@
     {{-- ========================================= COURSE =================================== --}}
 
     <div class="course-section">
-    <div class="course_header">
-        <h1 class="course-header-title">Course</h1>
-    </div>
+        <div class="course_header">
+            <h1 class="course-header-title">Course</h1>
+        </div>
 
-    <div class="course-content">
+        <div class="course-content">
 
         <div class="course-card-long">
             <p class="course-title">Course Name</p>
@@ -322,12 +324,12 @@
     <div class="advantages-wrapper1">
         <div class="advantages-content">
         <p class="advantages-title white-text">Advantage 1</p>
-        <p class="advantages-description white-text">Desc</p>
+        <p class="advantages-description white-text">Accessible Online</p>
         </div>
 
         <div class="advantages-content">
             <p class="advantages-title white-text">Advantage 2</p>
-            <p class="advantages-description white-text">Desc</p>
+            <p class="advantages-description white-text">Free Course</p>
         </div>
 
     </div>
@@ -339,12 +341,12 @@
     <div class="advantages-wrapper2">
         <div class="advantages-content">
         <p class="advantages-title white-text">Advantage 3</p>
-        <p class="advantages-description white-text">Desc</p>
+        <p class="advantages-description white-text">Everything About Web Programming  </p>
         </div>
 
         <div class="advantages-content">
             <p class="advantages-title white-text">Advantage 4</p>
-            <p class="advantages-description white-text">Desc</p>
+            <p class="advantages-description white-text">Include Video Tutorial</p>
         </div>
 
     </div>
