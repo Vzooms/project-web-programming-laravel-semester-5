@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Profile</title>
-    <link rel="stylesheet" href="/Styling/profileCourse.css">
+    <link rel="stylesheet" href="/Styling/course.css">
     <link rel="stylesheet" href="/Styling/default.css">
 </head>
 <body>
@@ -13,97 +13,68 @@
 
     <div class="profile-course-section">
         <div class="profile-course-header">
-            <h1 class="profile-course-title green-text">Course Title</h1>
+            <h1 class="profile-course-title black-text">Course Title</h1>
         </div>
     </div>
 
     <div class="profile-course-container">
 
         <div class="side-course-wrapper">
-            <img src="/Asset/Image/tutorial1.png" alt="">
+
 
             <div class="side-course-content">
 
                 <div class="side-course-contents">
-
-
-
+                    <img src="/Asset/Image/video.png" class="video-img" alt="">
                 </div>
 
-                <div class="side-course-contents">
 
-                    <div class="study-list-card">
-                        <p class="study-card-title">Course Name</p>
-                        <p class="study-card-desc">Course Description</p>
+                <form action="">
+                    <div class="side-course-contents">
+                        <p class="video-title">Judul Video</p>
                     </div>
+                </form>
 
-                    <div class="study-button">
-                        <div class="button1">
-
-                            <p class=""><a href='#' class="button-link1">Remove</a>
-                                <img src="Asset/Icon/remove.png" class="button-icon1" alt="">
-                            </p>
-
-                        </div>
-
-                        <div class="button3">
-                            <p class=""><a href='#' class="button-link3">Restart</a>
-                                <img src="Asset/Icon/restart-studylist.png" class="button-icon3" alt="">
-                            </p>
-                        </div>
+                <form action="">
+                    <div class="side-course-contents">
+                        <p class="desc-title">JASUKE Jason Susu Keju</p>
                     </div>
+                </form>
 
-                </div>
-
-                <div class="side-course-contents">
-
-                    <div class="study-list-card">
-                        <p class="study-card-title">Course Name</p>
-                        <p class="study-card-desc">Course Description</p>
-                    </div>
-
-                    <div class="study-button">
-                        <div class="button1">
-
-                            <p class=""><a href='#' class="button-link1">Remove</a>
-                                <img src="Asset/Icon/remove.png" class="button-icon1" alt="">
-                            </p>
-
-                        </div>
-
-                        <div class="button3">
-                            <p class=""><a href='#' class="button-link3">Restart</a>
-                                <img src="Asset/Icon/restart-studylist.png" class="button-icon3" alt="">
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
 
 
             </div>
-
-
-
-
 
         </div>
 
+
+
         <div class="side-profile-wrapper">
-            <div class="profile-image">
-                <img src="/Asset/Icon/profile.png" class="profile-img" alt="">
-            </div>
-            <div class="profile-title">
-                <p class="profile-username green-text">Username</p>
-                <p class="profile-email green-text">email@gmail.com</p>
+            <div class="code-content">
+                <p class="code-title black-text">Source Code Example</p>
             </div>
 
-            <div class="profile-button1">
-                <p class=""><a href='#' class="edit-link">Edit Profile</a>
+
+            <div class="source-code">
+
+                <p>
+
+                &lt;ul&gt;<br>
+                <pre class="source-codes">
+                &lt;li&gt;&lt;a href="default.asp"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a href="news.asp"&gt;News&lt;/a&gt;&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a href="contact.asp"&gt;Contact&lt;/a>&lt;/li&gt;<br>
+                &lt;li&gt;&lt;a href="about.asp"&gt;About&lt;/a&gt;&lt;/li&gt;
+                </pre>
+                &lt;/ul&gt;
+
+
+                </p>
             </div>
 
-            <div class="profile-button2">
-                <p class=""><a href='#' class="logout-link">Log Out</a>
+            <div class="check-button">
+                <h1 class="check-title">Mark As Completed</h1>
+                    <input type="checkbox" class="checklist">
             </div>
 
 
