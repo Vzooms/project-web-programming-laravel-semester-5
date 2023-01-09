@@ -15,6 +15,10 @@
         <div id="profile">
             <div id="form-profile">
                 <h1>Edit Profile</h1>
+
+                {{-- ini buat tampilin error tapi belom di style --}}
+                <h1>{{ $errors->first() }}</h1>
+
                 <form action="/editUser" method="post">
                     @csrf
                     <div id="form-profile-wrapper">

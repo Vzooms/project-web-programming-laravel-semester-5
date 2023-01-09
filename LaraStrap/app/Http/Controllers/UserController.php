@@ -95,8 +95,7 @@ class UserController extends Controller
             'gender' => $req->gender,
             'password' => bcrypt($req->password),
         ]);
-
-        // lom tau mau kmna, jadi smntara ke home dlu
+        
         return redirect('/');
     }
 

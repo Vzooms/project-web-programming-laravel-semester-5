@@ -64,7 +64,7 @@
             </div>
 
             <div class="profile-button1">
-                <p class=""><a href='#' class="edit-link">Edit Profile</a>
+                <p class=""><a href='/profileEdit' class="edit-link">Edit Profile</a>
             </div>
 
             <form action="/logout" method="post" class="profile-button2">

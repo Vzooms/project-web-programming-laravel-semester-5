@@ -17,14 +17,18 @@ class StudyListController extends Controller
     public function createStudyList(Request $req){
         StudyList::insert([
             'user_id' => auth()->user()->id,
-            'course_id' => $req->course_id
+            'course_id' => $req->course_id,
+            'completed' => false
         ]);
 
         return redirect('/studyList');
     }
 
     public function deleteStudyList(Request $req){
-        StudyList::where('id', $req->course_id)->delete();
+        StudyList::where([
+            ['user_id', auth()->user()->id],
+            ['course_id', $req->course_id]
+        ])->delete();
 
         return redirect('/studyList');
     }
