@@ -1,25 +1,25 @@
 <div id="menu-wrapper">
     <div id="menu-header">
-        <img src="./Asset/Image/logo.png" width="50px" alt="laraStrap Icon">
+        <img src={{ asset('./Asset/Image/logo.png') }} width="50px" alt="laraStrap Icon">
         <h3>LaraStrap</h3>
     </div>
     <div id="menu-list">
         <a class="underline" href="/">
             Home
-            <img src="./Asset/Icon/next.png" alt="RightArrow">
+            <img src={{ asset('./Asset/Icon/next.png') }} alt="RightArrow">
         </a>
         <a class="underline" href="#">
             Course
-            <img src="./Asset/Icon/next.png" alt="RightArrow">
+            <img src={{ asset('./Asset/Icon/next.png') }} alt="RightArrow">
         </a>
         @auth
             <a class="underline" href="/studyList">
                 Study List
-                <img src="./Asset/Icon/next.png" alt="RightArrow">
+                <img src={{ asset('./Asset/Icon/next.png') }} alt="RightArrow">
             </a>
             <a class="underline" href="/profile">
                 Profile
-                <img src="./Asset/Icon/next.png" alt="RightArrow">
+                <img src={{ asset('./Asset/Icon/next.png') }} alt="RightArrow">
             </a>
         @endauth
     </div>

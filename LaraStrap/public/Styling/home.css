@@ -354,7 +354,8 @@
 }
 
 .course-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     flex-direction: row;
     margin: 1vw;
 
@@ -365,7 +366,6 @@
     margin-bottom: 2vw;
     border-radius: 1vw;
     margin-right: 6vw;
-    width: 55vw;
 }
 
 

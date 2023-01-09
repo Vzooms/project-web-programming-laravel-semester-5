@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Course;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StudyListController;
@@ -16,7 +17,9 @@ use App\Http\Controllers\StudyListController;
 */
 
 Route::get('/', function () {
-    return view('home.home');
+    return view('home.home',[
+        'courses' => Course::all()
+    ]);
 });
 
 Route::get('/login', [UserController::class, 'toLogin']);
@@ -31,10 +34,7 @@ Route::post('/editUser', [UserController::class, 'editUser']);
 Route::post('/deleteUser', [UserController::class, 'deleteUser']);
 
 Route::get('/profile', [UserController::class, 'toProfile']);
-
-Route::get('/profileEdit', function () {
-    return view('profile.profile-edit');
-});
+Route::get('/profileEdit', [UserController::class, 'toEditProfile']);
 
 Route::get('/studyList', [StudyListController::class, 'toStudyList']);
 Route::post('/createStudyList', [StudyListController::class, 'createStudyList']);
@@ -43,6 +43,6 @@ Route::post('/deleteStudyList', [StudyListController::class, 'deleteStudyList'])
 Route::post('/createCourse', [StudyListController::class, 'createCourse']);
 Route::post('/deleteCourse', [StudyListController::class, 'deleteCourse']);
 
-Route::get('/course', function () {
+Route::get('/course/1', function () {
     return view('course');
 });

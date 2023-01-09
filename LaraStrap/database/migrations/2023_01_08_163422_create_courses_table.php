@@ -18,7 +18,6 @@ class CreateCoursesTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('video');
-            // bisa ditambahin lagi sesuai konten di page course
         });
     }
 

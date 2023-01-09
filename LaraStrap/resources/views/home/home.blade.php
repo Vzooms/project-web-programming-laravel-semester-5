@@ -60,11 +60,13 @@
                 <input type="search" id="fsearch" value="" placeholder="search topic, code, and more...">
             </form>
 
-            {{-- Image Study List --}}
-            <div class ="icon-img">
-                <img src="Asset/Icon/study.png" alt="">
-                <p class = "icon-def dark-green-text"> Study List</p>
-            </div>
+            {{-- Image Study List --}}'
+            <a href="/studyList">
+                <div class ="icon-img">
+                    <img src="Asset/Icon/study.png" alt="">
+                    <p class = "icon-def dark-green-text"> Study List</p>
+                </div>
+            </a>
 
         </div>
 
@@ -127,25 +129,9 @@
 
     <div class="course-content">
 
-        @include('home.course-card')
-        @include('home.course-card')
-        @include('home.course-card')
-
-    </div>
-
-    <div class="course-content">
-
-        @include('home.course-card')
-        @include('home.course-card')
-        @include('home.course-card')
-
-    </div>
-
-    <div class="course-content">
-
-        @include('home.course-card')
-        @include('home.course-card')
-        @include('home.course-card')
+        @foreach ($courses as $c)
+            @include('home.course-card')
+        @endforeach
 
     </div>
 

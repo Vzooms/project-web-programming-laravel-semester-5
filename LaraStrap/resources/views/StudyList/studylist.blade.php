@@ -16,7 +16,24 @@
         </div>
     </div>
 
-    @include('StudyList.studyList-card')
+    @if ($studyList->isNotEmpty())
+
+        <div class="study-list-section">
+            @foreach ($studyList as $sl)
+                @include('StudyList.studyList-card')
+            @endforeach
+        </div>
+
+    @else
+
+        <div class="study-list-empty">
+            <img src="/Asset/Icon/empty.png" class="empty-img" alt="">
+        </div>
+        <div class="empty-desc">
+            <p class="empty-desc-word tosca-text">Oops! It looks like your study list is empty.</p>
+        </div>
+
+    @endif
 
 </body>
 </html>
