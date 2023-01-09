@@ -18,6 +18,7 @@ class CreateStudyListsTable extends Migration
             $table->foreignId('user_id');
             $table->foreignId('course_id');
             $table->string('completed');
+            $table->timestamps();
         });
     }
 

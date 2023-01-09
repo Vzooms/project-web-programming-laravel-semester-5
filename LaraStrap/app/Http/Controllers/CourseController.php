@@ -9,9 +9,9 @@ use App\Http\Controllers\Controller;
 
 class CourseController extends Controller
 {
-    public function toCourse(Request $req){
+    public function toCourse($id){
         return view('course',[
-            'course' => Course::where('id', $req->id)->first()
+            'course' => Course::where('id', $id)->first()
         ]);
     }
 }

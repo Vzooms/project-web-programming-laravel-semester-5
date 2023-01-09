@@ -21,6 +21,7 @@
 
                 <form action="/editUser" method="post">
                     @csrf
+                    @method('update')
                     <div id="form-profile-wrapper">
                         <div class="reg">
                             <div>

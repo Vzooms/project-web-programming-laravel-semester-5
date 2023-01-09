@@ -404,8 +404,10 @@
 }
 
 .card-footer{
-    background-color: #c1f6ed;
     border-radius: 1vw;
+}
+.card-footer2{
+    background-color: var(--dark-green) !important;
 }
 
 .card-footer div{

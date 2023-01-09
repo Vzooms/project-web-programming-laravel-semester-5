@@ -5,17 +5,24 @@
     <br>
     <p class="course-desc-content">{{ $c->description }}</p>
 
-    <div class="card-footer">
-        <div>
-            <input type="hidden" value={{ $c->id }} name="course_id">
-            <button type="submit" id="add-course">
-                <h3 class="footer-word">Add to study List</h3>
-            </button>
-
-            <button id="learn-now">
-                <h3 class="footer-word"><a href="{{"course/".$c->id}}" class="link">Learn Now</a></h3>
-            </button>
+    @if($c->StudyList == null)
+        <div class="card-footer">
+            <div>
+                <input type="hidden" value={{ $c->id }} name="course_id">
+                <button type="submit" id="add-course">
+                    <h3 class="footer-word">Add to study List</h3>
+                </button>
+            </div>
         </div>
-    </div>
+    @else
+        <a href="{{'course/' . $c->id }}" class="card-footer">
+            <div>
+                <input type="hidden" value={{ $c->id }} name="course_id">
+                <button type="button" id="learn-now">
+                    <h3 class="footer-word">Learn Now</h3>
+                </button>
+            </div>
+        </a>
+    @endif
 
 </form>
