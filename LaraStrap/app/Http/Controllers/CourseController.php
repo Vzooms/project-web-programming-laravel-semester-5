@@ -14,26 +14,4 @@ class CourseController extends Controller
             'course' => Course::where('id', $req->id)->first()
         ]);
     }
-
-    public function createCourse(Request $req){
-
-        StudyList::insert([
-            'name' => $req->name,
-            'description' => $req->description,
-            'logo' => $req->logo,
-        ]);
-
-        return redirect('/createStudyList',[
-            'req' => StudyList::all()->reverse()->first()
-        ]);
-    }
-
-    public function deleteCourse(Request $req){
-        StudyList::where('id', $req->id)->delete();
-
-        return redirect('/deleteStudyList',[
-            'req' => $req
-        ]);
-    }
-
 }

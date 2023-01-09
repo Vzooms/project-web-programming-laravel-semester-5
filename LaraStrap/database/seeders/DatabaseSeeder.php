@@ -68,5 +68,7 @@ class DatabaseSeeder extends Seeder
             'description' => 'JavaScript has 8 datatypes and an object datatype.',
             'video' => 'PATH'
         ]);
+
+
     }
 }

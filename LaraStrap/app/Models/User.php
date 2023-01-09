@@ -11,8 +11,4 @@ class User extends Authenticatable
 {
     use HasFactory;
 
-    public function StudyList()
-    {
-        return $this->belongsTo(StudyList::class, 'foreign_key', 'other_key');
-    }
 }
