@@ -51,3 +51,7 @@ Route::get('/profilecourse', function () {
 Route::get('/profileempty', function () {
     return view('profile.profile-course-empty');
 });
+
+Route::get('/course', function () {
+    return view('course');
+});
