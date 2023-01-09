@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\StudyListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home.home');
 });
 
 Route::get('/login', [UserController::class, 'toLogin']);
@@ -29,27 +30,28 @@ Route::post('/logout', [UserController::class, 'logout']);
 Route::post('/editUser', [UserController::class, 'editUser']);
 Route::post('/deleteUser', [UserController::class, 'deleteUser']);
 
-
-Route::get('/profile', function () {
-    return view('profile.profile');
-});
+Route::get('/profile', [UserController::class, 'toProfile']);
 
 Route::get('/profileEdit', function () {
     return view('profile.profile-edit');
 });
 
-Route::get('/studylist', function () {
-    return view('studylist');
-});
+Route::get('/studyList', [StudyListController::class, 'toStudyList']);
+Route::post('/createStudyList', [StudyListController::class, 'createStudyList']);
+Route::post('/deleteStudyList', [StudyListController::class, 'deleteStudyList']);
+
+Route::post('/createCourse', [StudyListController::class, 'createCourse']);
+Route::post('/deleteCourse', [StudyListController::class, 'deleteCourse']);
 
 Route::get('/studylistempty', function () {
     return view('studylistempty');
 });
 
-Route::get('/profilecourse', function () {
-    return view('profile.profile-course');
-});
 
 Route::get('/profileempty', function () {
-    return view('profile.profile-course-empty');
+    return view('profile.profile-empty');
+});
+
+Route::get('/course', function () {
+    return view('course');
 });

@@ -10,6 +10,10 @@
     align-items: center;
     padding: 0 2vw 2vw 2vw;
 }
+.profile{
+    display: flex;
+    align-items: center;
+}
 .nav{
     font-family: regularp;
     font-size: 1vw;
@@ -39,23 +43,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.btn{
-    display: flex;
-    justify-content: center;
-}
-.sign-up{
-    width: 40vw;
-    font-family: boldp;
-    border: none;
-    margin-top: 3vw;
-    padding: 1vw;
-    border-radius: 0.5vw;
-    margin-right: 3vw;
-    font-size: 1.5vw;
-}
-.link{
-    text-decoration: none;
 }
 .acc{
     display: flex;
@@ -373,14 +360,6 @@
 
 }
 
-.course-card-long{
-    background-color: white;
-    margin-bottom: 2vw;
-    border-radius: 1vw;
-    margin-right: 6vw;
-    width: 124vw;
-}
-
 .course-card-short{
     background-color: white;
     margin-bottom: 2vw;
@@ -429,19 +408,34 @@
     border-radius: 1vw;
 }
 
+.card-footer div{
+    display: flex;
+}
+
+.card-footer div button{
+    width: 100%;
+    border: 0px ;
+}
+
+#add-course{
+    background-color: var(--tosca);
+}
+
+#learn-now{
+    background-color: var(--green);
+}
+
 .footer-word{
-    text-align: right;
+    text-align: center;
     padding: .3vw;
     padding-right: .7vw;
     font-family: boldp;
     font-size: .8vw;
 }
 
-
-
 .link{
+    color: white;
     text-decoration: none;
-    color: black;
 }
 
 /* ================================== TUTORIAL ============================== */
@@ -516,6 +510,7 @@
     font-size: 2vw;
     font-family: boldp;
     font-weight: lighter;
+    text-align: center;
 
  }
  .advantages-description{

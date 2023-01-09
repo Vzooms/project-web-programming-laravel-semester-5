@@ -12,10 +12,16 @@
             Course
             <img src="./Asset/Icon/next.png" alt="RightArrow">
         </a>
-        <a href="#">
-            Study List
-            <img src="./Asset/Icon/next.png" alt="RightArrow">
-        </a>
+        @auth
+            <a class="underline" href="/studyList">
+                Study List
+                <img src="./Asset/Icon/next.png" alt="RightArrow">
+            </a>
+            <a class="underline" href="/profile">
+                Profile
+                <img src="./Asset/Icon/next.png" alt="RightArrow">
+            </a>
+        @endauth
     </div>
 </div>
 <div id="backDrop"></div>
