@@ -10,4 +10,8 @@ var swiper = new Swiper(".mySwiper", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  });
+});
+
+function scrollCourse(){
+    document.querySelector('.course-section').scrollIntoView({behavior: 'smooth'})
+}

@@ -1,29 +1,3 @@
-/*========================================= EMPTY ===================================  */
-
-.empty-desc{
-    text-align: center;
-    margin-left: 7.5vw;
-    font-size:1.3vw;
-    font-family: regularp;
-}
-
-.empty-img{
-    width: 20vw;
-    margin: 2vw;
-    margin-left: 9vw;
-}
-
-.profile-course-empty{
-    margin: 2vw;
-}
-
-.side-wrapper-header-empty{
-    margin-bottom: 3vw;
-    font-family: boldp;
-    font-size: 1.1vw;
-    margin-left: .25vw;
-}
-
 /* ===================================== PROFILE COURSE =============================== */
 
 .profile-course-empty-container{
@@ -46,14 +20,14 @@
 .profile-course-title{
     font-size: 3vw;
     font-family: boldp;
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
 }
 
 .profile-course-container{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 
@@ -62,22 +36,11 @@
 
 }
 
-.side-wrapper-header{
-    margin-bottom: 3vw;
-    font-family: boldp;
-    font-size: 1.1vw;
-}
-
-
 .side-course-contents{
-    margin-bottom: 2vw;
-    padding-top: 2vw;
     padding-left: 2vw;
     padding-right: 2vw;
-    padding-bottom: 1vw;
+    margin-bottom: 1vw;
     display: flex;
-    background-color: #449342;
-    border-radius: 1vw;
     justify-content: space-between;
     width: 40vw;
 }
@@ -151,65 +114,32 @@
     float: right;
 }
 
+.video-img{
+    width: 40vw;
+}
 
-.button1, .button2, .button3{
-    border-radius: 1vw;
-    width: 10vw;
-    margin-bottom: 1vw;
-    padding: .3vw;
-    font-size: 1vw;
+.video-title{
+    font-size: 2.5vw;
     font-family: boldp;
 }
 
-.study-card-title{
-    font-size: 1.7vw;
+.code-title{
+    font-size: 2.5vw;
     font-family: boldp;
-    color: white;
-}
-
-.study-card-desc{
-    font-size: 1vw;
-    font-family: regularp;
-    color: white;
 }
 
 /* ========================================== SIDE WRAPPER ========================== */
 .side-profile-wrapper{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: flex-end;
 }
 
-.profile-img{
-    width: 15vw;
-}
-
-.profile-username{
-    font-size: 2vw;
-    font-family: boldp;
-}
-
-.profile-email{
-    font-size: 1.5vw;
-    font-family: regularp;
-}
 
 .profile-button1{
     margin-top: 6vw;
 }
 
-.profile-button1, .profile-button2{
-    border-radius: 1.7vw;
-    width: 12vw;
-    margin-bottom: 1vw;
-    padding: .7vw;
-    font-size: 1.1vw;
-    font-family: boldp;
-    background-color: #449342;
-    font-weight: lighter;
-}
 
 .edit-link{
     color: white;
@@ -220,3 +150,35 @@
     color: white;
     text-decoration: none;
 }
+
+.source-code{
+    font-family: regularp;
+    border: .1vw solid;
+    padding: 2vw;
+    margin-bottom: 6vw;
+}
+
+.source-codes{
+    font-family: regularp;
+}
+
+.check-button{
+    padding: 0.5vw 1vw;
+    border-radius: 10px;
+}
+
+.check-title{
+    font-size: 1.5vw;
+    font-family: regularp;
+
+}
+
+.checklist{
+    margin-left: 1vw;
+}
+
+.desc-title{
+    font-size: 1vw;
+}
+
+

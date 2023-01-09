@@ -10,4 +10,8 @@ class Course extends Model
 {
     use HasFactory;
 
+    public function StudyList()
+    {
+        return $this->hasOne(StudyList::class);
+    }
 }

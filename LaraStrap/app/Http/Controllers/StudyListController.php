@@ -18,7 +18,7 @@ class StudyListController extends Controller
         StudyList::insert([
             'user_id' => auth()->user()->id,
             'course_id' => $req->course_id,
-            'completed' => false
+            'completed' => 'false'
         ]);
 
         return redirect('/studyList');
@@ -31,5 +31,30 @@ class StudyListController extends Controller
         ])->delete();
 
         return redirect('/studyList');
+    }
+
+    public function completeStudyList(Request $req){
+        // dump($req->course_id);
+        // dump(auth()->user()->id);
+        // die();
+        StudyList::where([
+            ['user_id', auth()->user()->id],
+            ['course_id', $req->course_id]
+        ])->update([
+            'completed' => 'true'
+        ]);
+
+        return redirect('/profile');
+    }
+
+    public function unCompleteStudyList(Request $req){
+        StudyList::where([
+            ['user_id', auth()->user()->id],
+            ['course_id', $req->course_id]
+        ])->update([
+            'completed' => 'false'
+        ]);
+
+        return redirect('/profile');
     }
 }

@@ -27,16 +27,12 @@
 
                 <div class="side-course-content">
 
-                    <div class="side-course-contents">
+                    @foreach ($completedCourse as $cc)
+                        @if ($cc->completed == 'true')
+                            @include('profile.completed-course')
+                        @endif
+                    @endforeach
 
-                        <div class="study-list-card">
-                            <p class="study-card-title">Course Name</p>
-                            <p class="study-card-desc">Course Description</p>
-                        </div>
-
-                        @include('profile.completed-course')
-
-                    </div>
                 </div>
             @else
                 <div class="side-wrapper-header-empty">

@@ -3,6 +3,7 @@
 use App\Models\Course;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\StudyListController;
 
 /*
@@ -30,19 +31,16 @@ Route::post('/login', [UserController::class, 'login']);
 Route::post('/register', [UserController::class, 'register']);
 Route::post('/logout', [UserController::class, 'logout']);
 
-Route::post('/editUser', [UserController::class, 'editUser']);
-Route::post('/deleteUser', [UserController::class, 'deleteUser']);
+Route::patch('/editUser', [UserController::class, 'editUser']);
+Route::delete('/deleteUser', [UserController::class, 'deleteUser']);
 
 Route::get('/profile', [UserController::class, 'toProfile']);
 Route::get('/profileEdit', [UserController::class, 'toEditProfile']);
 
 Route::get('/studyList', [StudyListController::class, 'toStudyList']);
 Route::post('/createStudyList', [StudyListController::class, 'createStudyList']);
-Route::post('/deleteStudyList', [StudyListController::class, 'deleteStudyList']);
+Route::delete('/deleteStudyList', [StudyListController::class, 'deleteStudyList']);
+Route::patch('/unCompleteStudyList',[StudyListController::class, 'unCompleteStudyList']);
+Route::patch('/completeStudyList',[StudyListController::class, 'completeStudyList']);
 
-Route::post('/createCourse', [StudyListController::class, 'createCourse']);
-Route::post('/deleteCourse', [StudyListController::class, 'deleteCourse']);
-
-Route::get('/course/1', function () {
-    return view('course');
-});
+Route::get('/course/{id}',[CourseController::class, 'toCourse']);

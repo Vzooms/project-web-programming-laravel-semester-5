@@ -19,7 +19,7 @@
                     Welcome, {{ auth()->user()->username}}
                 </div>
             </a>
-            <div class="nav">
+            <div onclick="scrollCourse()" class="nav" >
                 Course
             </div>
             <div class="nav">
@@ -124,7 +124,9 @@
 
     <div class="course-section">
     <div class="course_header">
-        <h1 class="course-header-title">Course</h1>
+        <h1 class="course-header-title">
+            <a class="link" href="/studyList">Course</a>
+        </h1>
     </div>
 
     <div class="course-content">
@@ -219,8 +221,8 @@
 </div>
 
 {{-- Script --}}
-<script src="/Styling/swiper-bundle.min.js"></script>
-<script src="/Styling/main.js"></script>
+    <script src="/Styling/swiper-bundle.min.js"></script>
+    <script src="/Styling/main.js"></script>
 
 </body>
 </html>
