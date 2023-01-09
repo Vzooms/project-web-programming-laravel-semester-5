@@ -17,16 +17,15 @@
                 profile image
             </div>
             <div class="nav">
-                Welcome, username!
-            </div>
-            <div class="nav">
-                Tutorial
+                Welcome, {{ auth()->user()->username}}
             </div>
             <div class="nav">
                 Course
             </div>
             <div class="nav">
-                Study List
+                <a href="/studyList">
+                    Study List
+                </a>
             </div>
             <div class="web-name">
                 LaraStrap
@@ -42,14 +41,6 @@
                 </div>
                 <div class="desc light-blue-text">
                     Find your everyday topic about HTML, CSS, JS, <br>and many more.....
-                </div>
-                <div class="btn">
-                    <button class="sign-up white dark-green-text">
-                        <a class="link dark-green-text" href="/register">Sign Up</a>
-                    </button>
-                </div>
-                <div class="acc">
-                    <a class="white-text acc" href="login">I already have an account</a>
                 </div>
             </div>
             <div class="right">
@@ -81,49 +72,30 @@
         <div class = "content-wrap">
             <div class = "html-content">
 
-                    <div class= "con-head dark-green-text">
-                    HTML
-                    </div>
-                    <div class="con-sub dark-green-text">
-                    The language for
-                    </div>
-                    <div class ="con-sub dark-green-text">
-                     building web pages
-                    </div>
-                    <div class="con-btn dark-green">
-                        <button class="learn-now white-text">
-                            Learn Now
-                        </button>
-                    </div>
-                    <div class="add-btn white">
-                        <button class="add-list dark-green-text">
-                            Add to List
-                        </button>
-                    </div>
+                <div class= "con-head dark-green-text">
+                HTML
+                </div>
+                <div class="con-sub dark-green-text">
+                The language for
+                </div>
+                <div class ="con-sub dark-green-text">
+                    building web pages
+                </div>
+
             </div>
             <div class="html-line">
 
             </div>
             <div class = "css-content">
 
-                    <div class= "con-head green-text">
-                    CSS
-                    </div>
-                    <div class="con-sub green-text">
-                        The language for
-                    </div>
-                    <div class ="con-sub green-text">
-                        styling web pages
-                       </div>
-                    <div class="con-btn green">
-                        <button class="learn-now white-text">
-                            Learn Now
-                        </button>
-                    </div>
-                    <div class="add-btn white">
-                        <button class="add-list green-text">
-                            Add to List
-                        </button>
+                <div class= "con-head green-text">
+                CSS
+                </div>
+                <div class="con-sub green-text">
+                    The language for
+                </div>
+                <div class ="con-sub green-text">
+                    styling web pages
                     </div>
 
             </div>
@@ -140,17 +112,8 @@
                 </div>
                 <div class ="con-sub tosca-text">
                     programming web pages
-                   </div>
-                <div class="con-btn tosca">
-                    <button class="learn-now white-text">
-                        Learn Now
-                    </button>
                 </div>
-                <div class="add-btn white">
-                    <button class="add-list tosca-text">
-                        Add to List
-                    </button>
-                </div>
+
         </div>
     </div>
 
@@ -164,120 +127,27 @@
 
     <div class="course-content">
 
-        <div class="course-card-long">
-            <p class="course-title">Course Name</p>
-            <p class="course-border"></p>
-            <br>
-            <p class="padding-title-long">Course description</p>
-            <p class="course-desc-content">blablablablba</p>
-
-            <div class="card-footer">
-                <h3 class="footer-word"><a href='#' class="link">Learn Now ></a></h3>
-
-            </div>
-
-
-        </div>
-
-        <div class="course-card-short">
-            <p class="course-title">Course Name</p>
-            <p class="course-border"></p>
-            <br>
-            <p class="padding-title-short">Course description</p>
-            <p class="course-desc-content">blablablablba</p>
-
-            <div class="card-footer">
-                <h3 class="footer-word"><a href='#' class="link">Learn Now ></a></h3>
-
-            </div>
-
-        </div>
+        @include('home.course-card')
+        @include('home.course-card')
+        @include('home.course-card')
 
     </div>
 
     <div class="course-content">
 
-        <div class="course-card-short">
-            <p class="course-title">Course Name</p>
-            <p class="course-border"></p>
-            <br>
-            <p class="padding-title-short">Course description</p>
-            <p class="course-desc-content">blablablablba</p>
+        @include('home.course-card')
+        @include('home.course-card')
+        @include('home.course-card')
 
-            <div class="card-footer">
-                <h3 class="footer-word"><a href='#' class="link">Learn Now ></a></h3>
-
-            </div>
-
-
-        </div>
-
-        <div class="course-card-short">
-            <p class="course-title">Course Name</p>
-            <p class="course-border"></p>
-            <br>
-            <p class="padding-title-short">Course description</p>
-            <p class="course-desc-content">blablablablba</p>
-
-            <div class="card-footer">
-                <h3 class="footer-word"><a href='#' class="link">Learn Now ></a></h3>
-
-            </div>
-
-
-
-        </div>
-
-        <div class="course-card-short">
-            <p class="course-title">Course Name</p>
-            <p class="course-border"></p>
-            <br>
-            <p class="padding-title-short">Course description</p>
-            <p class="course-desc-content">blablablablba</p>
-
-            <div class="card-footer">
-                <h3 class="footer-word"><a href='#' class="link">Learn Now ></a></h3>
-
-            </div>
-
-
-
-        </div>
     </div>
 
     <div class="course-content">
 
-        <div class="course-card-short">
-            <p class="course-title">Course Name</p>
-            <p class="course-border"></p>
-            <br>
-            <p class="padding-title-short">Course description</p>
-            <p class="course-desc-content">blablablablba</p>
-
-            <div class="card-footer">
-                <h3 class="footer-word"><a href='#' class="link">Learn Now ></a></h3>
-
-            </div>
-
-
-        </div>
-
-        <div class="course-card-long">
-            <p class="course-title">Course Name</p>
-            <p class="course-border"></p>
-            <br>
-            <p class="padding-title-long">Course description</p>
-            <p class="course-desc-content">blablablablba</p>
-
-            <div class="card-footer">
-                <h3 class="footer-word"><a href='#' class="link">Learn Now ></a></h3>
-
-            </div>
-
-        </div>
+        @include('home.course-card')
+        @include('home.course-card')
+        @include('home.course-card')
 
     </div>
-
 
    </div>
 

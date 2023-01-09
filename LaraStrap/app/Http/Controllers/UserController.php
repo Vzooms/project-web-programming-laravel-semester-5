@@ -23,6 +23,13 @@ class UserController extends Controller
         ]);
     }
 
+    public function toProfile(){
+        return view('profile.profile',[
+            'user' => User::where('id', auth()->user()->id)->first(),
+            'completedCourse' => StudyList::where('id', auth()->user->id)->get()
+        ]);
+    }
+
     public function register(Request $req){
         $req->validate([
             'username' => 'required',

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\StudyListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,7 +16,7 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('home');
+    return view('home.home');
 });
 
 Route::get('/login', [UserController::class, 'toLogin']);
@@ -38,7 +39,12 @@ Route::get('/profileEdit', function () {
     return view('profile.profile-edit');
 });
 
-Route::get('/studyList', [CourseController::class, 'toStudyList']);
+Route::get('/studyList', [StudyListController::class, 'toStudyList']);
+Route::post('/createStudyList', [StudyListController::class, 'createStudyList']);
+Route::post('/deleteStudyList', [StudyListController::class, 'deleteStudyList']);
+
+Route::post('/createCourse', [StudyListController::class, 'createCourse']);
+Route::post('/deleteCourse', [StudyListController::class, 'deleteCourse']);
 
 Route::get('/studylistempty', function () {
     return view('studylistempty');
