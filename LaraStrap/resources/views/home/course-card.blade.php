@@ -1,4 +1,5 @@
-<div class="course-card-short">
+<form action="/createStudyList" method="post" class="course-card-short">
+    @csrf
     <p class="course-title">Course Name</p>
     <p class="course-border"></p>
     <br>
@@ -7,8 +8,9 @@
 
     <div class="card-footer">
         <div>
-            <button id="add-course">
-                <h3 class="footer-word"><a href='#' class="link">Add to study List</a></h3>
+            <input type="hidden" value="" name="course_id">
+            <button type="submit" id="add-course">
+                <h3 class="footer-word">Add to study List</h3>
             </button>
 
             <button id="learn-now">
@@ -17,4 +19,4 @@
         </div>
     </div>
 
-</div>
+</form>
