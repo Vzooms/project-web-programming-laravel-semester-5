@@ -191,13 +191,13 @@
 <div class="advantages-section dark-green">
     <div class="advantages-wrapper1">
         <div class="advantages-content">
-        <p class="advantages-title white-text">Advantage 1</p>
-        <p class="advantages-description white-text">Desc</p>
+        <p class="advantages-title white-text">Accessible Online</p>
+        {{-- <p class="advantages-description white-text">Desc</p> --}}
         </div>
 
         <div class="advantages-content">
-            <p class="advantages-title white-text">Advantage 2</p>
-            <p class="advantages-description white-text">Desc</p>
+            <p class="advantages-title white-text">Free Course</p>
+            {{-- <p class="advantages-description white-text">Desc</p> --}}
         </div>
 
     </div>
@@ -208,13 +208,14 @@
 
     <div class="advantages-wrapper2">
         <div class="advantages-content">
-        <p class="advantages-title white-text">Advantage 3</p>
-        <p class="advantages-description white-text">Desc</p>
+            <p class="advantages-title white-text">All About</p>
+            <p class="advantages-title white-text">Web Programming</p>
+        {{-- <p class="advantages-description white-text">Desc</p> --}}
         </div>
 
         <div class="advantages-content">
-            <p class="advantages-title white-text">Advantage 4</p>
-            <p class="advantages-description white-text">Desc</p>
+            <p class="advantages-title white-text">Include Video Tutorial</p>
+            {{-- <p class="advantages-description white-text">Desc</p> --}}
         </div>
 
     </div>
