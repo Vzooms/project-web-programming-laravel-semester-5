@@ -16,6 +16,7 @@ class CreateStudyListsTable extends Migration
         Schema::create('study_lists', function (Blueprint $table) {
             $table->foreignId('user_id');
             $table->foreignId('course_id');
+            $table->string('completed');
         });
     }
 
