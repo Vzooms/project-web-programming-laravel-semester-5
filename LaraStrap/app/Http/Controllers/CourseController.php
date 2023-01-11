@@ -14,4 +14,10 @@ class CourseController extends Controller
             'course' => Course::where('id', $id)->first()
         ]);
     }
+
+    public function searchCourse(Request $req){
+        return view('home.home',[
+            'courses' => Course::where('name', 'LIKE', "%".$req->search."%")->get()
+        ]);
+    }
 }

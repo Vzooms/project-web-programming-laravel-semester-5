@@ -20,9 +20,7 @@
 
         <div class="study-list-section">
             @foreach ($studyList as $sl)
-                @if($sl->completed == false)
-                    @include('StudyList.studyList-card')
-                @endif
+                @include('StudyList.studyList-card')
             @endforeach
         </div>
 

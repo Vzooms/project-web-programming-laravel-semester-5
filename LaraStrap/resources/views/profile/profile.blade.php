@@ -28,9 +28,7 @@
                 <div class="side-course-content">
 
                     @foreach ($completedCourse as $cc)
-                        @if ($cc->completed == 'true')
-                            @include('profile.completed-course')
-                        @endif
+                        @include('profile.completed-course')
                     @endforeach
 
                 </div>

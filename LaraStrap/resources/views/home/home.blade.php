@@ -53,11 +53,12 @@
     <div class="search-section">
         <div class="study-list-search">
             {{-- Form Container --}}
-            <form class="search-bar">
+            <form class="search-bar" action="/search" method="POST">
+                @csrf
                 <button type="submit" class="search-button">
                 <img src="Asset/Icon/search.webp" alt="">
                 </button>
-                <input type="search" id="fsearch" value="" placeholder="search topic, code, and more...">
+                <input type="search" id="fsearch" value="" placeholder="search topic, code, and more..." name="search">
             </form>
 
             {{-- Image Study List --}}'
@@ -130,7 +131,6 @@
     </div>
 
     <div class="course-content">
-
         @foreach ($courses as $c)
             @include('home.course-card')
         @endforeach

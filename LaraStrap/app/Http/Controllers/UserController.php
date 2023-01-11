@@ -26,7 +26,10 @@ class UserController extends Controller
 
     public function toProfile(){
         return view('profile.profile',[
-            'completedCourse' => StudyList::where('user_id', auth()->user()->id)->get()
+            'completedCourse' => StudyList::where([
+                ['user_id', auth()->user()->id],
+                ['completed', 'true']
+            ])->get()
         ]);
     }
 
@@ -95,7 +98,7 @@ class UserController extends Controller
             'gender' => $req->gender,
             'password' => bcrypt($req->password),
         ]);
-        
+
         return redirect('/');
     }
 

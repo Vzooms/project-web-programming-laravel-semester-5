@@ -10,7 +10,10 @@ class StudyListController extends Controller
 {
     public function toStudyList(){
         return view('StudyList.studylist',[
-            'studyList' => StudyList::where('user_id', auth()->user()->id)->get()
+            'studyList' => StudyList::where([
+                ['user_id', auth()->user()->id],
+                ['completed', 'false'], 
+            ])->get()
         ]);
     }
 
